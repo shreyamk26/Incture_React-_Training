@@ -1,0 +1,19 @@
+body {
+  font-family: Arial;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+button{
+    font-size:15px ;
+   
+}
+
+h1{
+    color: rgb(139, 131, 118);
+text-align: left;
+}
+
+
