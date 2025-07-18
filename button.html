@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="on" src="off_bulb.jfif" alt="some image here" width="200px">
+    <br>
+    <button onClick="handleON()">ON</button>
+    <button onClick="handleOFF()">OFF</button>
+    <button id="toggle_btn" onClick="toggleBulb()">ON_BULB</button>
+    <script>
+        function handleON(){
+            let obj=document.getElementById("on");
+            obj.setAttribute("src","on1.png");
+           
+        }
+        function handleOFF(){
+            let obj=document.getElementById("on");
+            obj.setAttribute("src","off_bulb.jfif");
+
+        }
+        function toggleBulb(){
+            let img_obj=document.getElementById("on");
+            let srcValue=img_obj.getAttribute("src");
+            let btn_obj=document.getElementById("toggle_btn");
+            let btn_text=btn_obj.innerHTML;
+            if(srcValue=="off_bulb.jfif")
+        {
+            handleON();
+            btn_obj.innerHTML="OFF BULB";
+        }
+        else{
+            handleOFF();
+            btn_obj.innerHTML="ON BULB";
+        }
+        }
+
+    </script>
+</body>
+</html>
