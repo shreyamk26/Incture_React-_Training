@@ -19,7 +19,7 @@ const Documents = () => {
 
   const handleNext = () => {
     if (documents.length === 0) {
-      alert("Please upload at least one document");
+      alert("Please uploads atleast one document");
       return;
     }
     next();

@@ -10,8 +10,8 @@ export const FormProvider = ({ children }) => {
   const [emergency, setEmergency] = useState([]);
   const [documents, setDocuments] = useState([]);
 
-  const next = () => setStep((prev) => prev + 1);
-  const prev = () => setStep((prev) => prev - 1);
+  const next = () => setStep((prev) =>prev + 1);
+  const prev = () => setStep((prev) =>prev - 1);
 
   return (
     <FormContext.Provider
@@ -24,7 +24,7 @@ export const FormProvider = ({ children }) => {
         documents, setDocuments,
       }}
     >
-      {children}
+     {children}
     </FormContext.Provider>
   );
 };
